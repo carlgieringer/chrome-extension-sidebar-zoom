@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extensions Sidebar Zoom Test",
+  "version": "0.0.1",
+  "description": "Minimum reproduction of Chrome being unable to send zoom events in the extension sidepanel",
+  "permissions": [
+    "sidePanel"
+  ],
+  "side_panel": {
+    "default_path": "pinch.html"
+  }
+}
