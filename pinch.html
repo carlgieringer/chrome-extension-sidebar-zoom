@@ -2,9 +2,28 @@
   <head>
     <meta charset="UTF-8">
     <title>Chrome Extensions Sidebar Zoom Test</title>
+    <style>
+      #the-div {
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        overflow: hidden;
+        position: relative;
+      }
+      #inner-rect {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+      }
+    </style>
   </head>
   <body>
-    <div id="the-div" style="width: 400px; height: 400px; border: 1px solid black;"></div>
+    <div id="the-div">
+      <div id="inner-rect"></div>
+    </div>
     <script src="pinch.js"></script>
   </body>
 </html>
